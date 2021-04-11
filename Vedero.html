@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Vedero.css">
+    <title>Vedro.Com</title>
+</head>
+<body>
+    <div id='mainblock'>
+        <h1 id='mainheader'>Каклькулятор вёдер онлайн</h1>
+        <br><br>
+        <h2 id='question'>Сколько литров в вашем</h2>
+        <h2 id='question'>литровом ведре?</h2>
+        <input type='text', class='answer' id='displnt' maxlength="3">
+        <br>
+        <h3 id='kekw'>:)</h3>
+        <br>
+        <h2 id='question'>Сколько у вас вёдер?</h2>
+        <input type='text', class='answer' id='num' maxlength="2">
+        <br>
+        <h3 id='kekw'>:)</h3>
+        <br><br>
+        <input type="button", id='calc', value='Расчитать!'>
+        <h3 id='kekw'>:)</h3>
+        <br>
+        <h2 id='question'>Всего вы сможете</h2>
+        <h2 id='question'>Налить в вёдра</h2>
+        <br>
+        <input type='text', id='result_answ'>
+    </div>
+
+    <script>
+        let num = 0;
+        let  displacement = 0;
+        let result = 0;
+        calc.onclick = function() 
+        {
+            num = document.getElementById('num').value;
+            displacement = document.getElementById('displnt').value;
+            result = num*displacement;
+            document.getElementById('result_answ').value = result;
+        }
+    </script>
+</body>
+</html>
